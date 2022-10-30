@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Kidd0921/FIT3179_Assignment2/main/nba_stats_and_rings_won.csv"
+    },
+    "transform": [
+      {"filter":{"field": "Category", "oneOf":["average assist", "average points", "average rebound", "net_rating"]}}],
+      "background": "orange",
+    "hconcat": [{"mark": "bar","view": {"fill":"lemonchiffon"},
+    "encoding": {
+      "x": {"field": "Category"},
+      "y": {"field": "Value", "type": "quantitative"},
+      "xOffset": {"field": "Player_Name"},
+      "color": {"field": "Player_Name"},
+      "tooltip": {"field": "Value", "type": "quantitative"}
+    },
+      "transform": [{"filter": {"param": "click"}}]},
+    {"layer":[{"mark": {"type":"circle", "size": 100, "tooltip":true},
+    "encoding": {
+      "x": {"field": "rings_won","scale": {"domain": [0, 7]}, "aggregate":"average", "type": "quantitative", "title":"Number of Championships Won"},
+      "y": {"field": "Player_Name", "type": "nominal", "axis":{"ticks": false, "labels": false}, "title":null},
+      "color": {
+        "condition":{
+          "param": "click",
+          "field": "Player_Name"}, "value": "lightgray", "legend": {"title":"NBA Players"}}
+    },
+      "params": [{
+        "name": "click",
+        "select": {"type": "point", "encodings": ["color"]}
+      }]}, {"mark": {"type":"bar", "height": 1, "tooltip":true},
+    "encoding": {
+      "x": {"field": "rings_won", "aggregate":"average", "type": "quantitative"},
+      "y": {"field": "Player_Name", "type": "nominal"},
+      "color": {"field": "Player_Name"}
+    },
+      "transform": [{"filter": {"param": "click"}}]}]}
+    ]
+  }

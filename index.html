@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img src="imgs/assignment_cover_page.jpg" class="background">
+      <img src="imgs/assignment_cover_page_crowd_cheering.png" class="foreground">
+      <h1 class="title">NBA</h1>
+      <h1 class="sub-title">MORE THAN A GAME.</h1>
+    </header>
+    <section> <hr><br><span style="opacity: 0.3; line-height: 150%;"> Hoop For The Best. Hooked With The Hoop. Save Your All For The Last Ball. Stay At The Winning Side. The Ring Is Our Thing. Freer Than The Free Throw. Just Give It A Shot! The Court Is Our Home. <span class="test">Buzzer Never Bothers Us Anyway.</span>  Bring Home The Ball. Know Your Court. Run For The Rings. Sharp Shots, Fiery Guts. Never Cram The Slam. Dribble till they tremble. Slam the hoops on the loop. Teamwork brings home triumph. We are ready to stuff you like an animal. <span class="test">Chase your dreams till you win the game.</span> Always Hoop For The Best. Hooked With The Hoop. Save Your All For The Last Ball. The Court Is Our Home. The Buzzer Never Bothers Us Anyway. Bring Home The Ball. Know Your Court. Run For The Rings. Sharp Shots, Fiery Guts. Never Cram The Slam. <span class="test">The Court Is Our Home.</span> Own the court like it’s your home. Slam and slay all the way. We are the hardwood hitters. Run hard, grind best. We are ready to stuff you like an animal. <span class="test">Freer Than The Free Throw.</span></span><br><br><hr> </section>
+    <header>
+        <img src="imgs/Tribute_Page.jpg" class="background">
+        <img src="imgs/Tribute_Picture.png" class="foreground2">
+        <h1 class="title2">A Tribute to the Game <br>(and Author's Favourite Player)</h1>
+        <p class="sub-title2">Foreword: The following visualization is dedicated to my late father who was a college basketball player and a big influence for my love of the game. Naturally, NBA was introduced to me and I fell deeper in love with the game. <br>Tied with my passion to the game, I would love to discover interesting data and information about the game with the viewers reading this. Enjoy.</p>
+    </header>
+    <section>
+        <span style="font-size: 300%;">Demographics in NBA</span><br><br>
+        Of course most NBA players would come from United States of America. However, as the game of NBA basketball progresses, so do the international players. 
+        <br><br>
+        For instance, <span class="test">France</span> has a total of <span class="test">35 NBA players</span> (Most NBA players in a country next to Canada and USA) and two of the generational talents include <span class="test">Tony Parker (Retired) and Rudy Gobert</span>. One was a four-time NBA Champion
+        and another was Three-time NBA Defensive Player of the Year.
+        <br><br>
+        Despite <span class="test">Greece</span> having only <span class="test">9 NBA players</span>, one of the most inspiring Greek-Nigerian professional basketball player certainly made his mark by leading the Bucks to their first NBA championship since 1971. His name is <span class="test">Giannis Antetokounmpo</span> and he proved that Greece is one country to watch out for.
+    </section>
+    <header>
+        <img src="imgs/Demographic_Page.jpg" class="background">
+        <iframe class="demographicFrame" style="background-color: #FFFFFF; width: 600px; height: 500px;" title="A Global Impact of NBA (Country Tracker)" aria-label="Map" id="datawrapper-chart-jGf3P" src="https://datawrapper.dwcdn.net/jGf3P/1/" scrolling="no" frameborder="0" style="border: none;" width="512" height="415"></iframe>
+    </header>
+    <section><span style="font-size: 300%;">The Size Factor <br> <span style="color: rgb(198, 198, 199);">(Are you fit to be in the NBA)</span></span><br><br>"...You should get into sports like basketball with that height of yours" is a common quote some people hear every now and then. That is a reasonable statement in fact, professional basketball players must be tall to be competitive in the league. <span class="test">In the visualisation of the weights and heights of professional basketball players in 1996 to 2022 below</span>, the <span class="test">average height</span> of a basketball player is <span class="test">between 195cm to 210cm</span>. The <span class="test">tallest basketball player</span> was <span class="test">Elhadji Tacko Sereigne Diop Fall</span>, a <span class="test">229cm</span> tall Senegalese. While the <span class="test">shortest player</span> is <span class="test">Muggsy Bogues</span>, with a height of <span class="test">160cm</span>. Another interesting fact that can be seen from the visualization is that the <span class="test">average weight of NBA players</span> is between <span class="test">90kg to 110kg</span>.</section>
+    
+    <header>
+        <img src="imgs/player_weight_height_average.jpg" class="background">
+        <div id="viz1"></div>
+    </header>
+    <section>
+        <span style="font-size: 300%;">Lebron, Kobe, or Jordan</span><br><br>
+        Michael Jordan, Kobe Bryant and Lebron James were and still are the undeniably most influential NBA players. 
+        <br><br>
+Although <span class="test">Lebron James</span> has the <span class="test">least won championships</span> (i.e. <span class="test">4 championships won compare to 5 and 6 championships won by Kobe Bryant and Michael Jordan respectively</span>), statistically, Lebron James is unsurpassed in terms of personal scoring stats. (e.g. <span class="test">Average points per game is 27.1 compare to 24.2 and 25.3</span>)
+<br><br>
+Note:
+Please feel free to interact with the lollipop chart.
+    </section>
+    <header>
+        <img src="imgs/lebron_kobe_mj.jpeg" class="background">
+        <div id="viz2" style="top: 100px;"></div>
+    </header>
+    <section style="text-align:center;"><hr><br><span style="text-align:center;">Thank you for reading.</span><br><br><br><br></section>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    var binnedScatterplotViz = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/Kidd0921/FIT3179_Assignment2/main/nba_height_weight.csv"},
+    "mark": {"type":"circle", "tooltip":true, "color":"orangered"},
+    "width": 500,
+    "height": 500,
+    "encoding": {
+      "x": {
+        "bin": {"maxbins": 20},
+        "field": "player_height",
+        "title": "Players' Height (cm)"
+      },
+      "y": {
+        "bin": {"maxbins": 20},
+        "field": "player_weight",
+        "title": "Players' Weight (kg)"
+      },
+      "size": {"aggregate": "count", "title": "Players Count"}
+    }
+};
+
+var barCharts = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/Kidd0921/FIT3179_Assignment2/main/nba_stats_and_rings_won.csv"
+    },
+    "transform": [
+      {"filter":{"field": "Category", "oneOf":["average assist", "average points", "average rebound", "net_rating"]}}],
+      "background": "#fad777",
+    "hconcat": [{"mark": "bar","view": {"fill":"lemonchiffon"},
+    "encoding": {
+      "x": {"field": "Category"},
+      "y": {"field": "Value", "type": "quantitative"},
+      "xOffset": {"field": "Player_Name"},
+      "color": {"field": "Player_Name"},
+      "tooltip": {"field": "Value", "type": "quantitative"}
+    },
+      "transform": [{"filter": {"param": "click"}}]},
+    {"layer":[{"mark": {"type":"circle", "size": 100, "tooltip":true},
+    "encoding": {
+      "x": {"field": "rings_won","scale": {"domain": [0, 7]}, "aggregate":"average", "type": "quantitative", "title":"Number of Championships Won"},
+      "y": {"field": "Player_Name", "type": "nominal", "axis":{"ticks": false, "labels": false}, "title":null},
+      "color": {
+        "condition":{
+          "param": "click",
+          "field": "Player_Name"}, "value": "lightgray", "legend": {"title":"NBA Players"}}
+    },
+      "params": [{
+        "name": "click",
+        "select": {"type": "point", "encodings": ["color"]}
+      }]}, {"mark": {"type":"bar", "height": 1, "tooltip":true},
+    "encoding": {
+      "x": {"field": "rings_won", "aggregate":"average", "type": "quantitative"},
+      "y": {"field": "Player_Name", "type": "nominal"},
+      "color": {"field": "Player_Name"}
+    },
+      "transform": [{"filter": {"param": "click"}}]}]}
+    ]
+  };
+
+
+
+vegaEmbed('#viz1', binnedScatterplotViz);
+vegaEmbed('#viz2', barCharts);
+
+
+</script>
+</body>
+</html>
+
